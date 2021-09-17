@@ -70,7 +70,7 @@ function play()
 
 function quiz(question, answer)
 {
-    var userAnswer = readlineSync.question(chalk.whiteBright(question));
+    var userAnswer = readlineSync.question(chalk.yellowBright(question));
     if(userAnswer.toLowerCase() == answer.toLowerCase())
     {
         console.log(chalk.blueBright("Right Answer"));
